@@ -9,7 +9,7 @@ namespace BasicCalculator
             InitializeComponent();
         }
 
-        private void btnNumber4_Click(object sender, EventArgs e)
+        private void BtnNumber4_Click(object sender, EventArgs e)
         {
             if (tbxVision.Text == "0")
             {
@@ -21,7 +21,7 @@ namespace BasicCalculator
             }
         }
 
-        private void btnNumber6_Click(object sender, EventArgs e)
+        private void BtnNumber6_Click(object sender, EventArgs e)
         {
             if (tbxVision.Text == "0")
             {
@@ -33,7 +33,7 @@ namespace BasicCalculator
             }
         }
 
-        private void btnNumber1_Click(object sender, EventArgs e)
+        private void BtnNumber1_Click(object sender, EventArgs e)
         {
             if (tbxVision.Text == "0")
             {
@@ -46,7 +46,7 @@ namespace BasicCalculator
 
         }
 
-        private void btnNumber2_Click(object sender, EventArgs e)
+        private void BtnNumber2_Click(object sender, EventArgs e)
         {
             if (tbxVision.Text == "0")
             {
@@ -58,7 +58,7 @@ namespace BasicCalculator
             }
         }
 
-        private void btnNumber3_Click(object sender, EventArgs e)
+        private void BtnNumber3_Click(object sender, EventArgs e)
         {
             if (tbxVision.Text == "0")
             {
@@ -70,7 +70,7 @@ namespace BasicCalculator
             }
         }
 
-        private void btnNumber5_Click(object sender, EventArgs e)
+        private void BtnNumber5_Click(object sender, EventArgs e)
         {
             if (tbxVision.Text == "0")
             {
@@ -82,7 +82,7 @@ namespace BasicCalculator
             }
         }
 
-        private void btnNumber7_Click(object sender, EventArgs e)
+        private void BtnNumber7_Click(object sender, EventArgs e)
         {
             if (tbxVision.Text == "0")
             {
@@ -94,7 +94,7 @@ namespace BasicCalculator
             }
         }
 
-        private void btnNumber8_Click(object sender, EventArgs e)
+        private void BtnNumber8_Click(object sender, EventArgs e)
         {
             if (tbxVision.Text == "0")
             {
@@ -106,7 +106,7 @@ namespace BasicCalculator
             }
         }
 
-        private void btnNumber9_Click(object sender, EventArgs e)
+        private void BtnNumber9_Click(object sender, EventArgs e)
         {
             if (tbxVision.Text == "0")
             {
@@ -118,7 +118,7 @@ namespace BasicCalculator
             }
         }
 
-        private void btnNumber0_Click(object sender, EventArgs e)
+        private void BtnNumber0_Click(object sender, EventArgs e)
         {
             if (tbxVision.Text == "0")
             {
@@ -130,7 +130,7 @@ namespace BasicCalculator
             }
         }
 
-        private void btnBackSpace_Click(object sender, EventArgs e)
+        private void BtnBackSpace_Click(object sender, EventArgs e)
         {
             if (Convert.ToDouble(tbxVision.Text) > 0)
             {
@@ -142,14 +142,14 @@ namespace BasicCalculator
             }
         }
 
-        private void btnRemove_Click(object sender, EventArgs e)
+        private void BtnRemove_Click(object sender, EventArgs e)
         {
             tbxVision.Text = "0";
             label1.Text = " ";
 
         }
 
-        private void btnAddition_Click(object sender, EventArgs e)
+        private void BtnAddition_Click(object sender, EventArgs e)
         {
             x = Convert.ToDouble(tbxVision.Text);
             calculate = "+";
@@ -157,7 +157,7 @@ namespace BasicCalculator
             tbxVision.Text = "0";
         }
 
-        private void btnEqual_Click(object sender, EventArgs e)
+        private void BtnEqual_Click(object sender, EventArgs e)
         {
             y = Convert.ToDouble(tbxVision.Text);
             if (calculate == "+")
@@ -188,7 +188,7 @@ namespace BasicCalculator
 
         }
 
-        private void btnSubtraction_Click(object sender, EventArgs e)
+        private void BtnSubtraction_Click(object sender, EventArgs e)
         {
             x = Convert.ToDouble(tbxVision.Text);
             calculate = "-";
@@ -196,7 +196,7 @@ namespace BasicCalculator
             tbxVision.Text = "0";
         }
 
-        private void btnMultiplication_Click(object sender, EventArgs e)
+        private void BtnMultiplication_Click(object sender, EventArgs e)
         {
             x = Convert.ToDouble(tbxVision.Text);
             calculate = "*";
@@ -204,7 +204,7 @@ namespace BasicCalculator
             tbxVision.Text = "0";
         }
 
-        private void btnDivision_Click(object sender, EventArgs e)
+        private void BtnDivision_Click(object sender, EventArgs e)
         {
             x = Convert.ToDouble(tbxVision.Text);
             calculate = "/";
@@ -212,28 +212,28 @@ namespace BasicCalculator
             tbxVision.Text = "0";
         }
 
-        private void btnSquaring_Click(object sender, EventArgs e)
+        private void BtnSquaring_Click(object sender, EventArgs e)
         {
             double square = Convert.ToDouble(tbxVision.Text);
             square = Math.Pow(square, 2);
             tbxVision.Text = Convert.ToString(square);
         }
 
-        private void btnSquareRoot_Click(object sender, EventArgs e)
+        private void BtnSquareRoot_Click(object sender, EventArgs e)
         {
             double squareRoot = Convert.ToDouble(tbxVision.Text);
             squareRoot = Math.Sqrt(squareRoot);
             tbxVision.Text = Convert.ToString(squareRoot);
         }
 
-        private void btnInversion_Click(object sender, EventArgs e)
+        private void BtnInversion_Click(object sender, EventArgs e)
         {
             double inversion = Convert.ToDouble(tbxVision.Text);
             inversion = 1 / (inversion);
             tbxVision.Text = Convert.ToString(inversion);
         }
 
-        private void btnMod_Click(object sender, EventArgs e)
+        private void BtnMod_Click(object sender, EventArgs e)
         {
             x = Convert.ToDouble(tbxVision.Text);
             calculate = "mod";
